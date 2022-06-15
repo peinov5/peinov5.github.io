@@ -32,7 +32,7 @@ header > .container > h1 {
 }
 
 header > .container > h1 > a {
-  color: white;
+  color: #8c4343;
 }
 
 header > .container > nav > ul {
@@ -45,13 +45,18 @@ header > .container > nav > ul > li {
 
 header > .container > nav > ul > li > a {
   line-height: 60px;
-  color: white;
+  color: #8c4343;
   font-size: 1.2em;
   letter-spacing: 2px;
 }
 
-.img-fluid {
+.banner-fluid {
   width: 100%;
+}
+
+.img-fluid {
+  width: 300px;
+  height: 200px;
 }
 
 .img-rounded {
@@ -88,4 +93,29 @@ header > .container > nav > ul > li > a {
 .col-6 {
   width: calc(100% / 2 - 30px);
   margin: 0px 15px 40px 15px;
+}
+
+.title a {
+  color: #8c4343;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.date {
+  color: #8c4343;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #8c4343;
+  padding: 40px 0 40px 0;
+}
+
+dt {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+dd > a {
+  color: white;
 }
