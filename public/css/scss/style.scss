@@ -62,8 +62,18 @@ header>.container>nav>ul>li>a{
 // 內容區塊
 // =============================
 
+
+// 圖片相關樣式
 .img-fluid{
     width: 100%;
+}
+
+.img-rounded{
+    border-radius: 8px;
+}
+
+.img-circle{ 
+    border-radius: 100%;
 }
 
 .row{
@@ -71,7 +81,26 @@ header>.container>nav>ul>li>a{
     flex-wrap: wrap; /*換行*/
 }
 
+
+// 文字相關樣式
+.text-center{
+    text-align: center;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
 .col-4{
-    width: calc(100%/3-30px);
-    margin: 15px;
+    width: calc(100% / 3 - 30px);
+    margin: 0px 15px 40px 15px;
+}
+
+.col-6{
+    width: calc(100% / 2 - 30px);
+    margin: 0px 15px 40px 15px;
 }
