@@ -19,7 +19,7 @@ body{
 
 .container{
     margin: auto;
-    width: 80%;
+    width: 90%;
     max-width: 1140px;
     // background-color: bisque;
 }
@@ -58,6 +58,9 @@ header>.container>nav>ul>li>a{
     letter-spacing: 2px;
 }
 
+.img{
+    width: 100%;
+}
 
 // =============================
 // 內容區塊

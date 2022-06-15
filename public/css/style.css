@@ -17,7 +17,7 @@ body {
 
 .container {
   margin: auto;
-  width: 80%;
+  width: 90%;
   max-width: 1140px;
 }
 
@@ -47,4 +47,8 @@ header > .container > nav > ul > li > a {
   color: white;
   font-size: 1.2em;
   letter-spacing: 2px;
+}
+
+.img {
+  width: 100%;
 }
