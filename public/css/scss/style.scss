@@ -17,6 +17,17 @@ body{
     margin: 0;
 }
 
+.container{
+    margin: auto;
+    width: 80%;
+    max-width: 1140px;
+    // background-color: bisque;
+}
+
+// =============================
+// 頁首
+// =============================
+
 header{
 background-color: rgb(184, 116, 116);}
 
@@ -29,12 +40,7 @@ header>.container>h1>a{
     color: $primary-color;
 }
 
-.container{
-    margin: auto;
-    width: 80%;
-    max-width: 1140px;
-    // background-color: bisque;
-}
+
 
 header>.container>nav>ul{
     display: flex;
@@ -51,3 +57,8 @@ header>.container>nav>ul>li>a{
     font-size: 1.2em;
     letter-spacing: 2px;
 }
+
+
+// =============================
+// 內容區塊
+// =============================
