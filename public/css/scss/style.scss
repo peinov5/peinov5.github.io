@@ -1,4 +1,4 @@
-$primary-color:rgb(139, 101, 148);
+$primary-color:rgb(255, 255, 255);
 
 *{
     margin: 0;
@@ -18,8 +18,7 @@ body{
 }
 
 header{
-    // background-color: green;
-}
+background-color: rgb(184, 116, 116);}
 
 header>.container>h1{
 padding-top: 20px;
