@@ -61,5 +61,6 @@ header > .container > nav > ul > li > a {
 }
 
 .col-4 {
-  width: 33.33333%;
+  width: calc(100%/3-30px);
+  margin: 15px;
 }
