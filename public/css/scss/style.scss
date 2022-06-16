@@ -9,6 +9,7 @@ ul,ol{
     list-style-type: none;
 }
 
+
 a{
     text-decoration: none;
 }
@@ -47,9 +48,14 @@ header>.container>nav>ul>li{
 
 header>.container>nav>ul>li>a{
     line-height: 60px;
-    color: #fff;
+    color:  antiquewhite;
     font-size: 1.2em;
     letter-spacing: 2px;
+}
+
+header>.container>nav>ul>li>a:hover{
+border-bottom: 1px solid  antiquewhite;
+padding-bottom: 5px;
 }
 
 // =============================
@@ -84,6 +90,46 @@ header>.container>nav>ul>li>a{
     flex-wrap: wrap; /*換行*/
 }
 
+.img-overlay{
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.img-wrap{
+    display: block;
+    position: relative;
+    background-color: brown;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    /*放大剪遮*/
+}
+
+.img-overlay{
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.img-wrap img{
+    vertical-align: top;
+    transform: all .5s;
+}
+
+.img-wrap img:hover{
+    transform: scale(1.5);
+}
+
+
+.icon-new{
+    position: absolute;
+    width: 50px;
+    line-height: 50px;
+    background-color: rgb(85, 146, 126);
+    color: white;
+    border-radius: 100%;
+    left: -25px;
+    top: -25px;
+}
 
 // 文字相關樣式
 .text-center{
@@ -106,6 +152,8 @@ header>.container>nav>ul>li>a{
 .workname{
     color: $primary-color;
 }
+
+
 
 
 // 分欄樣式
