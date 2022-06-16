@@ -66,9 +66,16 @@ header>.container>nav>ul>li>a{
 .leftbox{
     width: 200px;
     background-color: orange;
-    flex-direction: row-reverse;
     float: left;
     display: block;
+    flex-direction: row-reverse;
+}
+
+.rightbox{
+    width:800px;
+    display: block;
+    flex-direction: row-reverse;
+
 }
 
 
