@@ -101,7 +101,17 @@ header>.container>nav>ul>li>a{
     text-align: right;
 }
 
+.copyright{
+    font-size: 15px;
+    color: beige;
+}
+
 // 分欄樣式
+.col-3{
+    width: calc(100% / 4 - 30px);
+    margin:0px 15px 40px 15px;}
+    /*上右下左*/
+
 .col-4{
     width: calc(100% / 3 - 30px);
     margin: 0px 15px 40px 15px;
