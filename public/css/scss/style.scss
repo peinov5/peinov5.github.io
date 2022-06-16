@@ -67,9 +67,8 @@ header>.container>nav>ul>li>a{
 
 
 .img-fluid{
-   width: 300px;
+   width: 100%;
    height: 200px;
-   margin: 0 15px 0 15px;
 }
 
 .img-rounded{
@@ -186,5 +185,11 @@ dd>a{
 
 
 .btn-primary{
-    
+background-color: $primary-color;
+color: white;
+display: block;
+padding: 15px;
+margin-bottom:5px;
+border-radius: 4px;
+text-align: center;
 }
