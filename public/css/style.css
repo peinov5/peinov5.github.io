@@ -50,6 +50,14 @@ header > .container > nav > ul > li > a {
   letter-spacing: 2px;
 }
 
+.leftbox {
+  width: 200px;
+  background-color: orange;
+  flex-direction: row-reverse;
+  float: left;
+  display: block;
+}
+
 .banner-fluid {
   width: 100%;
 }
@@ -88,6 +96,12 @@ header > .container > nav > ul > li > a {
 .copyright {
   font-size: 15px;
   color: beige;
+}
+
+body > div > dl > dt > a {
+  color: aliceblue;
+  text-align: center;
+  line-height: 50px;
 }
 
 .col-3 {
