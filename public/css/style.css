@@ -169,3 +169,8 @@ dd > a {
   border-radius: 4px;
   text-align: center;
 }
+
+.btn-primary:hover {
+  background: #664848;
+  color: white;
+}
