@@ -301,9 +301,15 @@ header>.container nav{
     position: absolute;
     top:60px;
     background-color:rgb(199, 142, 142);
+
+    //需要從上往下出現導覽時
+    //height:100vh;
+    //z-index:999;
 }
+
 nav{
-    left:-100vw;
+    //等二層選單做完後再打開
+    // left:-100vw;
     opacity: 0;
     transition: all .5s;
 }
@@ -330,11 +336,25 @@ header>.container nav>ul>li{
 header>.container nav>ul>li>a{
     display: block;}
 
+.submenu{
+    display: none;
+    background-color: rgb(240, 188, 188);
+}
 
-.overflow-hidden{
-    overflow: hidden;
+header>.container nav >ul>li:hover.submenu{
+    display: block;
+}
+
+.submenu>li{
+    line-height: 60px;
+    border-bottom: 1px solid black;
+}
+
+.submenu>li>a{
+    color: rgb(96, 50, 50);
 }
 }
+
 //小於767以下執行 end
 
 @for $i from 1 through 12{

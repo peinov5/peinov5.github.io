@@ -271,7 +271,6 @@ header > .container > nav {
   }
 
   nav {
-    left: -100vw;
     opacity: 0;
     transition: all 0.5s;
   }
@@ -298,8 +297,22 @@ header > .container > nav {
     display: block;
   }
 
-  .overflow-hidden {
-    overflow: hidden;
+  .submenu {
+    display: none;
+    background-color: #f0bcbc;
+  }
+
+  header > .container nav > ul > li:hover.submenu {
+    display: block;
+  }
+
+  .submenu > li {
+    line-height: 60px;
+    border-bottom: 1px solid black;
+  }
+
+  .submenu > li > a {
+    color: #603232;
   }
 }
 .col-1 {
