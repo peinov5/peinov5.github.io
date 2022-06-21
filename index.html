@@ -1,108 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pei's Portfolio</title>
     <link rel="stylesheet" href="public/css/style.css">
-</head>
-
-<body>
-    <!-- header>.container>h1{Pei's portfolio}+nav>ul>li*4>a[href="#"]{文字} -->
-    <header>
-        <div class="container">
-            <h1>Pei's portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">關於我</a></li>
-                    <li><a href="designworks2.html">平面設計</a></li>
-                    <li><a href="#">網頁設計</a></li>
-                    <li><a href="#">聯絡我</a></li>
-                </ul>
-            </nav>
+  </head>
+  <body>
+    <!-- header>.container>h1{Pei's portfolio}+nav>ul>li*4>a[href="#"]{文字}-->
+    <header> 
+      <div class="container">
+        <div class="row flex-space-between">
+          <h1><a href="index.html">Pei's portfolio</a></h1><a class="icon-menu" href="#">menu </a>
+          <nav>
+            <ul>
+              <li><a href="#">關於我</a></li>
+              <li><a href="designworks2.html">平面設計</a></li>
+              <li><a href="#">網頁設計</a></li>
+              <li><a href="#">聯絡我</a></li>
+            </ul>
+          </nav>
         </div>
+      </div>
     </header>
-    <!-- header end 頁首結尾 -->
-    <img src="public/images/peiwu.png" class="banner-fluid" alt="">
-
-    <!-- content start -->
-    <!-- .container>h1{最新作品}+.row>.col-4*6>img.img-fluid+p.title>a[href="#"]{標題$}^p.date{內容} -->
+    <!-- header end 頁首結尾--><img class="banner-fluid" src="public/images/peiwu.png" alt="">
+    <!-- content start-->
+    <!-- .container>h1{最新作品}+.row>.col-md-4*6>img.img-fluid+p.title>a[href="#"]{標題$}^p.date{內容}-->
     <div class="container">
-        <h1 class="text-center">最新作品</h1>
-        <div class="row">
-            <!-- .col-4*7>a>img[src="https://baconmockup.com/300/300" class="img-fluid img-rounded"]^p.title.text-center>a{作品標題$}^p.date.text-center{2022-6-15} -->
-            <div class="col-4">
-                <a href=""><img src="public/images/dcdm-shirt.jpg" alt="" class="img-fluid img-rounded"></a>
-                <p class="title text-center"><a href="">文創系系服</a></p>
-                <p class="date text-center">一2022.06.15</p>
-            </div>
-            <div class="col-4">
-                <a href=""><img src="public/images/graduation.jpg" alt="" class="img-fluid img-rounded"></a>
-                <p class="title text-center"><a href="">送舊海報</a></p>
-                <p class="date text-center">2022.06.15</p>
-            </div>
-            <div class="col-4">
-                <a href=""><img src="public/images/guitarclub.jpg" alt="" class="img-fluid img-rounded"></a>
-                <p class="title text-center"><a href="">吉他社傳單</a></p>
-                <p class="date text-center">2022.06.15</p>
-            </div>
-            <div class="col-4">
-                <a href=""><img src="public/images/icecream.jpg" alt="" class="img-fluid img-rounded"></a>
-                <p class="title text-center"><a href="">小小冰LOGO</a></p>
-                <p class="date text-center">2022.06.15</p>
-            </div>
-            <div class="col-4">
-                <a href=""><img src="public/images/infinite-poster.jpg" alt="" class="img-fluid img-rounded"></a>
-                <p class="title text-center"><a href="">海報設計</a></p>
-                <p class="date text-center">2022.06.15</p>
-            </div>
-            <div class="col-4">
-                <a href=""><img src="public/images/mousecard.jpg" alt="" class="img-fluid img-rounded"></a>
-                <p class="title text-center"><a href="">鼠年賀卡</a></p>
-                <p class="date text-center">2022.06.15</p>
-            </div>
+      <h1 class="text-center">最新作品</h1>
+      <div class="row">
+        <!-- .col-4*7>a>img[src="https://baconmockup.com/300/300" class="img-fluid img-rounded"]^p.title.text-center>a{作品標題$}^p.date.text-center{2022-6-15}-->
+        <div class="col-6 col-md-4 col-lg-3"><a href=""><img class="img-fluid img-rounded" src="public/images/dcdm-shirt.jpg" alt=""></a>
+          <p class="title text-center"><a href="">文創系系服</a></p>
+          <p class="date text-center">一2022.06.15</p>
         </div>
+        <div class="col-6 col-md-4 col-lg-3"><a href=""><img class="img-fluid img-rounded" src="public/images/graduation.jpg" alt=""></a>
+          <p class="title text-center"><a href="">送舊海報</a></p>
+          <p class="date text-center">2022.06.15</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3"><a href=""><img class="img-fluid img-rounded" src="public/images/guitarclub.jpg" alt=""></a>
+          <p class="title text-center"><a href="">吉他社傳單</a></p>
+          <p class="date text-center">2022.06.15</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3"><a href=""><img class="img-fluid img-rounded" src="public/images/icecream.jpg" alt=""></a>
+          <p class="title text-center"><a href="">小小冰LOGO</a></p>
+          <p class="date text-center">2022.06.15</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3"><a href=""><img class="img-fluid img-rounded" src="public/images/infinite-poster.jpg" alt=""></a>
+          <p class="title text-center"><a href="">海報設計</a></p>
+          <p class="date text-center">2022.06.15</p>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3"><a href=""><img class="img-fluid img-rounded" src="public/images/mousecard.jpg" alt=""></a>
+          <p class="title text-center"><a href="">鼠年賀卡</a></p>
+          <p class="date text-center">2022.06.15</p>
+        </div>
+      </div>
     </div>
     <footer>
-        <div class="container">
-            <div class="row">
-                <dl class="col-3">
-                    <dt>標題01</dt>
-                    <dd><a href="">項目01</a></dd>
-                    <dd><a href="">項目02</a></dd>
-                    <dd><a href="">項目03</a></dd>
-                    <dd><a href="">項目04</a></dd>
-                </dl>
-                <dl class="col-3">
-                    <dt>標題02</dt>
-                    <dd><a href="">項目01</a></dd>
-                    <dd><a href="">項目02</a></dd>
-                    <dd><a href="">項目03</a></dd>
-                    <dd><a href="">項目04</a></dd>
-                </dl>
-                <dl class="col-3">
-                    <dt>標題03</dt>
-                    <dd><a href="">項目01</a></dd>
-                    <dd><a href="">項目02</a></dd>
-                    <dd><a href="">項目03</a></dd>
-                    <dd><a href="">項目04</a></dd>
-                </dl>
-                <dl class="col-3">
-                    <dt>標題04</dt>
-                    <dd><a href="">項目01</a></dd>
-                    <dd><a href="">項目02</a></dd>
-                    <dd><a href="">項目03</a></dd>
-                    <dd><a href="">項目04</a></dd>
-                </dl>
-            </div>
+      <div class="container">
+        <div class="row">
+          <dl class="col-3">
+            <dt>標題01</dt>
+            <dd><a href="">項目01</a></dd>
+            <dd><a href="">項目02</a></dd>
+            <dd><a href="">項目03</a></dd>
+            <dd><a href="">項目04</a></dd>
+          </dl>
+          <dl class="col-3">
+            <dt>標題02</dt>
+            <dd><a href="">項目01</a></dd>
+            <dd><a href="">項目02</a></dd>
+            <dd><a href="">項目03</a></dd>
+            <dd><a href="">項目04</a></dd>
+          </dl>
+          <dl class="col-3">
+            <dt>標題03</dt>
+            <dd><a href="">項目01</a></dd>
+            <dd><a href="">項目02</a></dd>
+            <dd><a href="">項目03</a></dd>
+            <dd><a href="">項目04</a></dd>
+          </dl>
+          <dl class="col-3">
+            <dt>標題04</dt>
+            <dd><a href="">項目01</a></dd>
+            <dd><a href="">項目02</a></dd>
+            <dd><a href="">項目03</a></dd>
+            <dd><a href="">項目04</a></dd>
+          </dl>
         </div>
-        <p class="text-center">copyright</p>
+      </div>
+      <p class="text-center">copyright</p>
     </footer>
-
-
-
-</body>
-
+  </body>
 </html>

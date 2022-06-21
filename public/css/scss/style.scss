@@ -20,7 +20,7 @@ body{
 
 .container{
     margin: auto;
-    width: 100%;
+    width:90%;
     max-width: 1140px;
 }
 
@@ -31,29 +31,34 @@ body{
 header{
 background-color:$primary-color;}
 
-header>.container>h1{
-padding-top: 20px;
+header>.container h1{
+padding-top: 10px;
 color: white;
+width: 85%;
 }
 
+header>.container h1>a{
+    color: white;
+    }
+    
 
-header>.container>nav>ul{
+header>.container >nav>ul{
     display: flex;
     // justify-content: space-between;
 }
 
-header>.container>nav>ul>li{
+header>.container nav>ul>li{
     margin-right: 30px;
 }
 
-header>.container>nav>ul>li>a{
+header>.container nav>ul>li>a{
     line-height: 60px;
     color:  antiquewhite;
     font-size: 1.2em;
     letter-spacing: 2px;
 }
 
-header>.container>nav>ul>li>a:hover{
+header>.container nav>ul>li>a:hover{
 border-bottom: 1px solid  antiquewhite;
 padding-bottom: 5px;
 }
@@ -101,8 +106,6 @@ padding-bottom: 5px;
     background-color: brown;
     margin-bottom: 10px;
     border-radius: 8px;
-    overflow: hidden;
-    /*放大剪遮*/
 }
 
 .img-overlay{
@@ -127,8 +130,8 @@ padding-bottom: 5px;
     background-color: rgb(85, 146, 126);
     color: white;
     border-radius: 100%;
-    left: -25px;
-    top: -25px;
+    left: -10px;
+    top: -10px;
 }
 
 // 文字相關樣式
@@ -154,9 +157,8 @@ padding-bottom: 5px;
 }
 
 
-
-
 // 分欄樣式
+
 .col-3{
     width: calc(100% / 4 - 30px);
     margin:0px 15px 40px 15px;}
@@ -176,7 +178,6 @@ padding-bottom: 5px;
     width: calc(100% / 1.5 - 30px);
     margin: 0px 15px 40px 15px;
 }
-
 
 .col-9{
     width: calc(100% / 1.33333 - 30px);
@@ -249,3 +250,136 @@ text-align: center;
 .btn-primary:hover{
     background: rgb(102, 72, 72);
     color:white;}
+
+
+//icon-menu
+
+.icon-menu{
+    width: 15%;
+    display: block;
+    background-color: orange;
+    color: black;
+    line-height: 60px;
+    text-align: center;
+}
+
+header>.container>nav{
+    width: 100%;
+}
+
+
+
+//超過768px以上執行 start
+@media (min-width:768px){
+    .icon-menu{
+        display: none;
+    }
+}
+//超過768px以上執行 end
+
+.flex-space-between{
+    justify-content: space-between;
+}
+
+//小於767以下執行 start
+@media (max-width:767px){
+.icon-menu{
+    width: 15%;
+    display: block;
+    background-color: orange;
+    color: black;
+    line-height: 60px;
+    text-align: center;
+}
+
+header{
+    position: relative;
+}
+
+header>.container nav{
+    width: 100%;
+    position: absolute;
+    top:60px;
+    background-color:rgb(199, 142, 142);
+}
+nav{
+    left:-100vw;
+    opacity: 0;
+    transition: all .5s;
+}
+
+.icon-menu:hover+nav{
+    left:0px;
+    opacity: 1;
+}
+
+header>.container nav.active{
+    display: block;
+}
+
+
+header>.container nav>ul{
+    display: block;
+}
+
+header>.container nav>ul>li{
+    width: 100%;
+    text-align: center;
+}
+
+header>.container nav>ul>li>a{
+    display: block;}
+
+
+.overflow-hidden{
+    overflow: hidden;
+}
+}
+//小於767以下執行 end
+
+@for $i from 1 through 12{
+    .col-#{$i}{
+        $num:calc(12 / #{$i});
+        width: calc(100% / #{$num} - 30px);
+        margin: 0px 15px 40px 15px;
+    }
+}
+
+@media (min-width:768px){
+    @for $i from 1 through 12{
+        .col-md-#{$i}{
+            $num:calc(12 / #{$i});
+            width: calc(100% / #{$num} - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
+}
+
+@media (min-width:1200px){
+    @for $i from 1 through 12{
+        .col-lg-#{$i}{
+            $num:calc(12 / #{$i});
+            width: calc(100% / #{$num} - 30px);
+            margin: 0px 15px 40px 15px;
+        }
+    }
+}
+
+
+//for迴圈
+//from through 從1開始到3
+@for $i  from 1 through 10 {
+    .fz-#{$i}{
+        font-size:$i*1em
+    }
+}
+
+@for $i from 1 through 5 {
+    .mb-#{$i}{
+        margin-bottom: $i*1em;
+    }
+}
+
+.order-md-1{
+    order: -1;
+  }

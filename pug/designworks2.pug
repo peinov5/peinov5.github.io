@@ -1,0 +1,118 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Pei's Portfolio
+    link(rel='stylesheet' href='public/css/style.css')
+  body
+    // header>.container>h1{Pei's portfolio}+nav>ul>li*4>a[href="#"]{文字}
+    header.overflow-hidden 
+          .container
+            a.icon-menu(href="#") menu 
+            h1
+                a(href="index.html") Pei's portfolio
+            nav
+              ul
+                li
+                  a(href='#') 關於我
+                li
+                  a(href='designworks2.html') 平面設計
+                li
+                  a(href='#') 網頁設計
+                li
+                  a(href='#') 聯絡我
+    .container
+      .row
+        ul.col-12.breadcrumb
+          li
+            a(href='index.html') 首頁
+          li(style='color:rgb(184, 114, 114)') 平面作品
+        aside.col-12.col-md-3.col-lg-2
+          ul
+            li
+              a.btn-primary(href='') 分類01
+            li
+              a.btn-primary(href='') 分類02
+            li
+              a.btn-primary(href='') 分類03
+            li
+              a.btn-primary(href='') 分類04
+        main.col-12.col-md-9.col-lg-10
+          .row
+            // .col-4*6>img.img-fluid+a{作品標題$}
+            .col-12.col-md-4.text-center
+              a.img-wrap(href='#')
+                .img-overlay
+                  img.img-fluid.img-rounded(src='https://via.placeholder.com/300/200' alt='')
+                span.icon-new NEW
+              a.workname(href='') 作品標題1
+            .col-12.col-md-4.text-center
+              a.img-wrap(href='#')
+                .img-overlay
+                  img.img-fluid.img-rounded(src='https://via.placeholder.com/300/200' alt='')
+                span.icon-new NEW
+              a.workname(href='') 作品標題2
+            .col-12.col-md-4.text-center
+              a.img-wrap(href='#')
+                .img-overlay
+                  img.img-fluid.img-rounded(src='https://via.placeholder.com/300/200' alt='')
+                span.icon-new NEW
+              a.workname(href='') 作品標題3
+            .col-12.col-md-4.text-center
+              a.img-wrap(href='#')
+                .img-overlay
+                  img.img-fluid.img-rounded(src='https://via.placeholder.com/300/200' alt='')
+                span.icon-new NEW
+              a.workname(href='') 作品標題4
+            .col-12.col-md-4.text-center
+              a.img-wrap(href='#')
+                .img-overlay
+                  img.img-fluid.img-rounded(src='https://via.placeholder.com/300/200' alt='')
+                span.icon-new NEW
+              a.workname(href='') 作品標題5
+    footer
+      .container
+        .row
+          dl.col-3
+            dt 標題01
+            dd
+              a(href='') 項目01
+            dd
+              a(href='') 項目02
+            dd
+              a(href='') 項目03
+            dd
+              a(href='') 項目04
+          dl.col-3
+            dt 標題02
+            dd
+              a(href='') 項目01
+            dd
+              a(href='') 項目02
+            dd
+              a(href='') 項目03
+            dd
+              a(href='') 項目04
+          dl.col-3
+            dt 標題03
+            dd
+              a(href='') 項目01
+            dd
+              a(href='') 項目02
+            dd
+              a(href='') 項目03
+            dd
+              a(href='') 項目04
+          dl.col-3
+            dt 標題04
+            dd
+              a(href='') 項目01
+            dd
+              a(href='') 項目02
+            dd
+              a(href='') 項目03
+            dd
+              a(href='') 項目04
+      p.text-center copyright

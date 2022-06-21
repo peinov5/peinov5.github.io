@@ -1,0 +1,114 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title Pei's Portfolio
+    link(rel='stylesheet' href='public/css/style.css')
+  body
+    // header>.container>h1{Pei's portfolio}+nav>ul>li*4>a[href="#"]{文字}
+    header 
+      .container
+        .row.flex-space-between
+          h1
+            a(href="index.html") Pei's portfolio
+          a.icon-menu(href="#") menu 
+          nav
+            ul
+              li
+                a(href='#') 關於我
+              li
+                a(href='designworks2.html') 平面設計
+              li
+                a(href='#') 網頁設計
+              li
+                a(href='#') 聯絡我
+    // header end 頁首結尾
+    img.banner-fluid(src='public/images/peiwu.png' alt='')
+    // content start
+    // .container>h1{最新作品}+.row>.col-md-4*6>img.img-fluid+p.title>a[href="#"]{標題$}^p.date{內容}
+    .container
+      h1.text-center 最新作品
+      .row
+        // .col-4*7>a>img[src="https://baconmockup.com/300/300" class="img-fluid img-rounded"]^p.title.text-center>a{作品標題$}^p.date.text-center{2022-6-15}
+        .col-6.col-md-4.col-lg-3
+          a(href='')
+            img.img-fluid.img-rounded(src='public/images/dcdm-shirt.jpg' alt='')
+          p.title.text-center
+            a(href='') 文創系系服
+          p.date.text-center 一2022.06.15
+        .col-6.col-md-4.col-lg-3
+          a(href='')
+            img.img-fluid.img-rounded(src='public/images/graduation.jpg' alt='')
+          p.title.text-center
+            a(href='') 送舊海報
+          p.date.text-center 2022.06.15
+        .col-6.col-md-4.col-lg-3
+          a(href='')
+            img.img-fluid.img-rounded(src='public/images/guitarclub.jpg' alt='')
+          p.title.text-center
+            a(href='') 吉他社傳單
+          p.date.text-center 2022.06.15
+        .col-6.col-md-4.col-lg-3
+          a(href='')
+            img.img-fluid.img-rounded(src='public/images/icecream.jpg' alt='')
+          p.title.text-center
+            a(href='') 小小冰LOGO
+          p.date.text-center 2022.06.15
+        .col-6.col-md-4.col-lg-3
+          a(href='')
+            img.img-fluid.img-rounded(src='public/images/infinite-poster.jpg' alt='')
+          p.title.text-center
+            a(href='') 海報設計
+          p.date.text-center 2022.06.15
+        .col-6.col-md-4.col-lg-3
+          a(href='')
+            img.img-fluid.img-rounded(src='public/images/mousecard.jpg' alt='')
+          p.title.text-center
+            a(href='') 鼠年賀卡
+          p.date.text-center 2022.06.15
+    footer
+      .container
+        .row
+          dl.col-3
+            dt 標題01
+            dd
+              a(href='') 項目01
+            dd
+              a(href='') 項目02
+            dd
+              a(href='') 項目03
+            dd
+              a(href='') 項目04
+          dl.col-3
+            dt 標題02
+            dd
+              a(href='') 項目01
+            dd
+              a(href='') 項目02
+            dd
+              a(href='') 項目03
+            dd
+              a(href='') 項目04
+          dl.col-3
+            dt 標題03
+            dd
+              a(href='') 項目01
+            dd
+              a(href='') 項目02
+            dd
+              a(href='') 項目03
+            dd
+              a(href='') 項目04
+          dl.col-3
+            dt 標題04
+            dd
+              a(href='') 項目01
+            dd
+              a(href='') 項目02
+            dd
+              a(href='') 項目03
+            dd
+              a(href='') 項目04
+      p.text-center copyright
